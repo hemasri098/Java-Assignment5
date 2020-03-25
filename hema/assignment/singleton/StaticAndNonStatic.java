@@ -1,4 +1,6 @@
-package hema.assignment.singleton;
+package com.company.JavaAssignment5.singleton;
+
+import java.util.logging.Logger;
 
 public class StaticAndNonStatic {
     String string_Var;
@@ -8,6 +10,7 @@ public class StaticAndNonStatic {
         return obj;
     }
     public void print() {
-        System.out.println("String:" + string_Var);
+        Logger LOGGER = Logger.getAnonymousLogger();
+        LOGGER.info("String:" + string_Var);
     }
 }
